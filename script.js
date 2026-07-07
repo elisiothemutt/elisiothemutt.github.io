@@ -4,24 +4,26 @@ const texto = document.getElementById("text");
 
 let indice = 0;
 
-function escrever() {
+function escrever(){
 
-    if (indice >= mensagem.length) {
+    if(indice >= mensagem.length){
+
         return;
+
     }
 
-    texto.textContent += mensagem[indice];
+    texto.textContent += mensagem.charAt(indice);
 
     indice++;
 
-    setTimeout(escrever, 30);
+    setTimeout(escrever,30);
 
 }
 
-window.onload = () => {
+window.addEventListener("load",()=>{
 
-    texto.textContent = "";
+    texto.textContent="";
 
     escrever();
 
-};
+});
