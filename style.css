@@ -1,30 +1,69 @@
-@font-face {
-    font-family: PixelOperator;
-    src: url("PixelOperator-Bold.ttf");
+@font-face{
+
+    font-family:PixelOperator;
+
+    src:url("PixelOperator-Bold.ttf");
+
 }
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
     font-family:PixelOperator;
+
 }
 
 body{
+
     background:black;
+
     overflow:hidden;
+
 }
+
+/* ========================== */
+/* GRAMA */
+/* ========================== */
+
+#grass{
+
+    position:absolute;
+
+    left:50%;
+
+    top:45%;
+
+    transform:translate(-50%,-50%);
+
+    width:420px;
+
+    image-rendering:pixelated;
+
+    z-index:1;
+
+}
+
+/* ========================== */
+/* CAIXA */
+/* ========================== */
 
 .textbox{
 
     position:absolute;
 
-    bottom:40px;
     left:50%;
+
+    bottom:40px;
 
     transform:translateX(-50%);
 
     width:900px;
+
     height:220px;
 
     border:4px solid white;
@@ -36,21 +75,33 @@ body{
     align-items:flex-start;
 
     padding:25px;
+
+    z-index:10;
+
 }
+
+/* ========================== */
+/* SPRITE */
+/* ========================== */
 
 #sprite{
 
     width:110px;
-    height:110px;
 
     image-rendering:pixelated;
 
-    margin-right:30px;
+    margin-right:35px;
+
 }
+
+/* ========================== */
+/* TEXTO */
+/* ========================== */
 
 .text-area{
 
     flex:1;
+
 }
 
 #text{
@@ -66,21 +117,5 @@ body{
     width:650px;
 
     word-wrap:break-word;
-    
-#grass{
 
-    position:absolute;
-
-    left:50%;
-    top:50%;
-
-    transform:translate(-50%,-50%);
-
-    image-rendering:pixelated;
-
-    width:500px;   /* ajuste conforme necessário */
-
-    z-index:1;
-
-}
 }
