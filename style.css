@@ -66,5 +66,21 @@ body{
     width:650px;
 
     word-wrap:break-word;
+    
+#grass{
 
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    image-rendering:pixelated;
+
+    width:500px;   /* ajuste conforme necessário */
+
+    z-index:1;
+
+}
 }
