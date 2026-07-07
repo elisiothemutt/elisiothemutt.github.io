@@ -1,21 +1,19 @@
-const dialogo = "* Oi.\n* Tudo bem com você?";
+const mensagem = "* Olá.\n* Tudo bem com você?";
 
 const texto = document.getElementById("text");
 
-let i = 0;
+let indice = 0;
 
-function escrever(){
+function escrever() {
 
-    if(i < dialogo.length){
+    if (indice >= mensagem.length)
+        return;
 
-        texto.textContent += dialogo[i];
+    texto.textContent += mensagem[indice];
+    indice++;
 
-        i++;
-
-        setTimeout(escrever,35);
-
-    }
+    setTimeout(escrever, 40);
 
 }
 
-escrever();
+window.onload = escrever;
