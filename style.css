@@ -59,7 +59,12 @@ body{
 
     font-size:42px;
 
-    line-height:1.2;
+    line-height:1.15;
 
     white-space:pre-wrap;
+
+    width:650px;
+
+    word-wrap:break-word;
+
 }
