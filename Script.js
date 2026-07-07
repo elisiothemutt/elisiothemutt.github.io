@@ -1,19 +1,7 @@
-const mensagem = "* Olá.\n* Tudo bem com você?";
+alert("script carregou");
 
 const texto = document.getElementById("text");
 
-let indice = 0;
+alert(texto);
 
-function escrever() {
-
-    if (indice >= mensagem.length)
-        return;
-
-    texto.textContent += mensagem[indice];
-    indice++;
-
-    setTimeout(escrever, 40);
-
-}
-
-window.onload = escrever;
+texto.textContent = "FUNCIONOU";
